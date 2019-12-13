@@ -31,10 +31,9 @@ namespace CSFrame
 
         public void InitBrowser()
         {
-            //String htmlPath = string.Format(@"{0}\web\login.html", Application.StartupPath);
             string htmlPath = System.Configuration.ConfigurationManager.AppSettings["htmlPath"];
             htmlPath = new DESEncrypt().Decrypt(htmlPath, "dfgtre42");
-            if (!htmlPath.StartsWith("http") && !htmlPath.StartsWith("nacollector"))
+            if (!htmlPath.StartsWith("http") && !htmlPath.StartsWith("innersource://"))
             {
                 htmlPath = Path.GetFullPath(htmlPath);
             }

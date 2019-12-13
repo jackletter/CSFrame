@@ -14,10 +14,6 @@ namespace CSFrame
     /// </summary>
     public class DESEncrypt
     {
-        public DESEncrypt()
-        {
-        }
-
         /// <summary>
         /// DES加密
         /// </summary>
@@ -57,7 +53,5 @@ namespace CSFrame
             cs.FlushFinalBlock();
             return System.Text.Encoding.Default.GetString(ms.ToArray());
         }
-
-
     }
 }

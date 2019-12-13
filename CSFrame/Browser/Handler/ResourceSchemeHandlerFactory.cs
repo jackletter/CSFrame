@@ -14,6 +14,6 @@ namespace CSFrame.Browser.Handler
             return new ResourceSchemeHandler();
         }
 
-        public static string SchemeName { get { return "nacollector"; } }
+        public static string SchemeName { get { return "innersource"; } }
     }
 }

@@ -187,6 +187,5 @@ namespace CSFrame
                 new CSFrame.CommonFrm(width, height, url, title).ShowDialog();
             }));
         }
-
     }
 }

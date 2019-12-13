@@ -19,7 +19,7 @@ namespace CSFrame.Browser.Handler
             String file = u.Authority + u.AbsolutePath;
 
             Assembly ass = Assembly.GetExecutingAssembly();
-            String resourcePath = "code." + file.Replace("/", ".");
+            String resourcePath = "CSFrame." + file.Replace("/", ".");
 
             Task.Run(() =>
             {
